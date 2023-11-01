@@ -1,0 +1,35 @@
+.nav{
+    background-color: brown;
+}
+.navHead{
+    color: white;
+    font-size: 150%;
+    font-weight: 800px;
+}
+.search{
+    width: 30%;
+}
+.searchBar{
+    width: 100%;
+    padding: 3%;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 3px solid black;
+}
+.searchbtn{
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+.wishlist{
+    font-size: 18px;
+    color: white;
+}
+.wishlist_icon{
+    color: black;
+    font-size: 22px;
+}
+.wishlist_icon:hover{
+    color: red;
+}

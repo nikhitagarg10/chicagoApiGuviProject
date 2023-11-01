@@ -1,0 +1,22 @@
+.imgDiv{
+    height: 400px;
+    object-fit: contain;
+}
+.imgDiv img{
+    height: 100%;
+    width: 100%;
+}
+.wishimg{
+    position: relative;
+}
+.crossicon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 22px;
+    color: white;
+}
+.crossicon:hover{
+    font-size: 25px;;
+    color: red;
+}

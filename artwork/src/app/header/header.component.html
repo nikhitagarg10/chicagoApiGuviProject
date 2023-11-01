@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg nav p-4">
+    <div class="container-fluid d-flex justify-content-between">
+      <div>
+        <a [routerLink]="['']" class="navbar-brand navHead m-0">Art Institute Of Chicago</a>
+      </div>
+      <div class="search">
+          <form [formGroup]="searchForm" class="d-flex">
+            <input class="p-3" type="text" placeholder="Search" class="searchBar" formControlName="searchValue"/>
+            <button class="searchbtn" type="submit" (click)="onSubmit()"><fa-icon [icon]="faMagnifyingGlass"></fa-icon></button>
+          </form>
+      </div>
+      <div class="d-flex">
+        <h4 class="wishlist">WishList</h4>
+        <a [routerLink]="['wishlist']" class="wishlist_icon"><fa-icon [icon]="faHeart"></fa-icon></a>
+      </div>
+    </div>
+</nav>

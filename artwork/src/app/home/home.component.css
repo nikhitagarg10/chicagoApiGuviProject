@@ -1,0 +1,25 @@
+.cardSty{
+    width: 18rem;
+}
+
+.imgDiv{
+    height: 400px;
+    object-fit: contain;
+}
+.imgDiv img{
+    height: 100%;
+    width: 100%;
+}
+.homeImg{
+    position: relative;
+}
+.wishIcon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 22px;
+    color: white;
+}
+.wishIcon:hover{
+    color: red;
+}

@@ -1,0 +1,26 @@
+<div class="conatiner d-flex flex-wrap justify-content-center mt-5">
+    <div class="card me-3 mb-3 cardSty" id="{{d.id}}" *ngFor="let d of (artSliceData );">
+      <!-- | slice:StartData:EndData -->
+      <div class="imgDiv">
+        <a [routerLink]="['individual', d.id]" class="homeImg"><img [src]=" 'https://www.artic.edu/iiif/2/' + d.image_id + '/full/843,/0/default.jpg'" class="card-img-top"></a>
+        <a [routerLink]="['wishlist', d.id]" class="wishIcon"><fa-icon [icon]="faHeart"></fa-icon></a>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title m-0">{{d.artwork_type_title}}</h6>
+        <h2 class="card-title m-0">{{d.title}}</h2>
+        <h3 class="card-title">{{d.artist_title}}</h3>
+      </div>
+    </div>
+</div>
+
+<mat-paginator #paginator
+                class="demo-paginator"
+                (page)="HandlePageEvent($event)"
+                [length]="Length"
+                [disabled]="Disabled"
+                [showFirstLastButtons]="ShowFirstLastButtons"
+                [hidePageSize]="HidePageSize"
+                [pageIndex]="PageIndex"
+                [pageSize]="PageSize"
+                aria-label="Select page">
+  </mat-paginator>

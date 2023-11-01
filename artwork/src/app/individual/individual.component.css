@@ -1,0 +1,15 @@
+.heading{
+    color: rgb(92, 4, 4);
+    font-size: 40px;
+    font-weight: 700;
+}
+.subheading{
+    color: darkbrown;
+    font-size: 20px;
+    font-weight: 500;
+}
+.subheading1{
+    font-size: 18px;
+    color: rgb(1, 35, 1);
+    text-decoration: underline;
+}
